@@ -69,14 +69,16 @@
 
 <p>My first introduction to a SAS data set was via an example of directly reading a data set.</p>
 
-<div class="highlight"><pre><code class="r">DATA Leukemia;
-  <code class="r">INPUT</code> IdNum Weeks Status Group Age Sex $ ;
 <!--  <code class="gi">INPUT</code> Leukemia -->
+<div class="highlight"><pre><code class="r">DATA Leukemia;
+  <code class="r">INPUT</code> IdNum Weeks Status Group Sex $ Age ;
   DATALINES;
-      1  6  0  1  10  M
-      2  6  1  1  12  F
+      1  6  0  1  F  10
+      2  6  1  1  M  12
 ;
 RUN;</code></pre></div>
+
+<p>The <code>$</code> after <code>Sex</code> defines the variable <code>Sex</code> to be a character variable.</p>
 
 <h3>Where are my files?</h3>
 
