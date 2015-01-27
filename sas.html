@@ -70,11 +70,11 @@
 <p>My first introduction to a SAS data set was via an example of directly reading a data set.</p>
 
 <div class="highlight"><pre><code class="r">DATA Leukemia;
-  <code class="r">INPUT</code> IdNum Weeks Status Group Age;
-  <code class="gi">INPUT</code> Leukemia
-  DATALINES:
-      1  6  0  1  10
-      2  6  1  1  12
+  <code class="r">INPUT</code> IdNum Weeks Status Group Age Sex $ ;
+<!--  <code class="gi">INPUT</code> Leukemia -->
+  DATALINES;
+      1  6  0  1  10  M
+      2  6  1  1  12  F
 ;
 RUN;</code></pre></div>
 
